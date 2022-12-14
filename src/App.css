@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Josefin;
+}
+.light{
+  background-color:hsl(0, 0%, 98%);
+  /* color: white;hsl(236, 33%, 92%) */
+
+}
+@font-face {
+  font-family: Josefin;
+  src: url(https://fonts.google.com/specimen/Josefin+Sans);
+}
+.dark {
+  background-color: hsl(235, 21%, 11%);
+  color: #fff;
+ }
+ .dark .header{
+  background-image: url("images/bg-mobile-dark.jpg");
+ }
+ .dark .header #theme-toggle-dark-icon {
+  display:none;
+ }
+ 
+ .dark .item ,.dark input{
+  background-color: #24273D;
+ }
+.dark hr{
+  opacity: 0.1;
+}
+ /* .light {
+  background-color: #fff;
+  color: #333;
+ } */
+ .light .header #theme-toggle-light-icon {
+  display:none
+ }
+.listbody{
+  min-height: 70vh;
+}
+.dark .itemcount{
+  color:hsl(233, 14%, 35%);
+}
+.itemcount{
+  color: hsl(233, 11%, 70%);
+}
+.dark .itembody{
+  color:hsl(234, 39%, 85%);
+}
+.itembody{
+  position: relative;
+  top:-35px;
+  color: hsl(240, 6%, 50%);
+  font-weight: 600;
+}
+.liststatus{
+ color: hsl(240, 6%, 50%);
+ font-weight: 600;
+}
+.dark .liststatus{
+  color:hsl(234, 39%, 85%);
+}
+.dragtext{
+   color:hsl(234, 39%, 85%);
+}
+.dark .dragtext{
+  color:hsl(240, 6%, 50%);;
+}
+.header {
+  background-image: url("images/bg-mobile-light.jpg");
+  background-size: cover;
+  font-family: Josefin;
+}
+.tracking-widest {
+  letter-spacing: 0.9em;
+  font-weight: 900;
+  font-size: larger;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item{
+  background-color:white;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*desktop and larger view*/
+
+@media screen and (min-width:821px) {
+  .header {
+    background-image: url("images/bg-desktop-light.jpg");
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .dark .header{
+    background-image: url("images/bg-desktop-dark.jpg");
   }
 }
