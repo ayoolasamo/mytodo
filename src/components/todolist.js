@@ -1,17 +1,34 @@
-import React from "react";
-import { tododata } from "../tododata";
+import React, { useContext } from 'react';
 import Listitem from "./listItem";
 import TodoStatus from "./todoStatus";
+
+
+import { TaskContext } from '../contexts/taskcontext';
+import { Action } from '../reducers/taskReducer';
+
 const Todolist = () => {
+    const {
+        sortedTasks,
+        dispatch,
+    } = useContext(TaskContext)
+    const onChecked = (id, isChecked) => {
+        dispatch({
+            type: Action.CHECK_TASK,
+            task: {
+                id,
+                isChecked
+            }
+        })
+    }
     return (
         <div className="grid md:w-1/2 lg:w-1/3 m-auto">
             <div className="py-2 px-6  listbody md:px-0 ">
                 <div className="item itembody">
                     {
-                        tododata.map((data) => {
+                        sortedTasks.map((data) => {
                             return (
                                 <Listitem
-                                    item={data.item}
+                                    item={data.description}
                                 />
                             )
                         })
