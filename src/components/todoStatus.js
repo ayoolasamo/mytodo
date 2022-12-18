@@ -1,11 +1,12 @@
 import React from "react";
 
-const TodoStatus = () => {
+const TodoStatus = (all,active,completed) => {
     return (
         <div className="p-4 liststatus text-center item grid grid-cols-3" >
-            <p>All</p>
-            <p>Active</p>
-            <p>Completed</p>
+            <p onClick={all}>All</p>
+            <button onClick={active}>Active</button>
+            <p onClick={completed}>Completed </p>
+
         </div>
     )
 }
