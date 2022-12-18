@@ -1,8 +1,10 @@
-import uuid from 'uuid'
+// import uuid from 'uuid'
 export const Action = {
     ADD_TASK: "add-task",
     CHECK_TASK: "check-task",
-    REMOVE_TASK: "remove-task"
+    REMOVE_TASK: "remove-task",
+    REMOVE_CTASK: "remove-completed-task"
+
 }
 
 export const taskReducer = (state, action) => {
@@ -17,6 +19,9 @@ export const taskReducer = (state, action) => {
 
         case Action.REMOVE_TASK: {
             return state.filter(task => task.id !== action.id)
+        }
+        case Action.REMOVE_CTASK:{
+            return state.filter(task=> task.isChecked === false)
         }
         default:
             return state;

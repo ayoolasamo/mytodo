@@ -5,14 +5,24 @@
   font-size: 18px;
   font-family: Josefin;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .light{
   background-color:hsl(0, 0%, 98%);
   /* color: white;hsl(236, 33%, 92%) */
+
 
 }
 @font-face {
   font-family: Josefin;
   src: url(https://fonts.google.com/specimen/Josefin+Sans);
+}
+.active{
+  color: hsl(220, 98%, 61%)
+}
+.filter:hover{
+  color: hsl(235, 21%, 11%);
 }
 .dark {
   background-color: hsl(235, 21%, 11%);
