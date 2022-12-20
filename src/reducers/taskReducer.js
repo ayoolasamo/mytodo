@@ -1,4 +1,4 @@
-// import uuid from 'uuid'
+import uuid from 'uuid'
 export const Action = {
     ADD_TASK: "add-task",
     CHECK_TASK: "check-task",
