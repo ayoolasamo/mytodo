@@ -12,16 +12,17 @@ export const taskReducer = (state, action) => {
         case Action.ADD_TASK: {
             return [...state, action.task]
         }
-        case Action.CHECK_TASK:
+        case Action.CHECK_TASK:{
             let taskIndex = state.findIndex(t => t.id === action.task.id);
-            state[taskIndex].isChecked = action.task.isChecked
-            return state.filter(task => task.id !== action.id);
+            state[taskIndex].isChecked = action.task.isChecked;
+            // return state.filter(task => task.id !== action.id);
+        }
 
         case Action.REMOVE_TASK: {
-            return state.filter(task => task.id !== action.id)
+            return state.filter(task => task.id !== action.id);
         }
         case Action.REMOVE_CTASK:{
-            return state.filter(task=> task.isChecked === false)
+            return state.filter(task=> task.isChecked === false);
         }
         default:
             return state;
