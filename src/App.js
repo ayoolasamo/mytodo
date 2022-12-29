@@ -1,16 +1,14 @@
-import './App.css';
-import Todolist from './components/todolist';
-import TaskContextProvider from './contexts/taskcontext';
-import Header from './components/header';
-
+import "./App.css";
+import { ToDoList } from "./components/ToDoList/ToDoList";
+import TaskContextProvider from "./contexts/task";
+import { Header } from "./components/Header/Header";
 
 function App() {
-  
   return (
     <div>
       <TaskContextProvider>
-        <Header/>
-        <Todolist />
+        <Header />
+        <ToDoList />
       </TaskContextProvider>
     </div>
   );

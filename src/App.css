@@ -8,76 +8,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.light{
-  background-color:hsl(0, 0%, 98%);
+.light {
+  background-color: hsl(0, 0%, 98%);
   /* color: white;hsl(236, 33%, 92%) */
-
-
 }
 @font-face {
   font-family: Josefin;
   src: url(https://fonts.google.com/specimen/Josefin+Sans);
 }
-.active{
-  color: hsl(220, 98%, 61%)
+.active {
+  color: hsl(220, 98%, 61%);
 }
-.filter:hover{
+.filter:hover {
   color: hsl(235, 21%, 11%);
 }
 .dark {
   background-color: hsl(235, 21%, 11%);
   color: #fff;
- }
- .dark .header{
+}
+.dark .header {
   background-image: url("images/bg-mobile-dark.jpg");
- }
- .dark .header #theme-toggle-dark-icon {
-  display:none;
- }
- 
- .dark .item ,.dark input{
-  background-color: #24273D;
- }
-.dark hr{
+}
+.dark .header #theme-toggle-dark-icon {
+  display: none;
+}
+
+.dark .item,
+.dark input {
+  background-color: #24273d;
+}
+.dark hr {
   opacity: 0.1;
 }
- /* .light {
+/* .light {
   background-color: #fff;
   color: #333;
  } */
- .light .header #theme-toggle-light-icon {
-  display:none
- }
-.listbody{
+.light .header #theme-toggle-light-icon {
+  display: none;
+}
+.listbody {
   min-height: 70vh;
 }
-.dark .itemcount{
-  color:hsl(233, 14%, 35%);
+.dark .itemcount {
+  color: hsl(233, 14%, 35%);
 }
-.itemcount{
+.itemcount {
   color: hsl(233, 11%, 70%);
 }
-.dark .itembody{
-  color:hsl(234, 39%, 85%);
+.dark .itembody {
+  color: hsl(234, 39%, 85%);
 }
-.itembody{
+.itembody {
   position: relative;
-  top:-35px;
+  top: -35px;
   color: hsl(240, 6%, 50%);
   font-weight: 600;
 }
-.liststatus{
- color: hsl(240, 6%, 50%);
- font-weight: 600;
+.liststatus {
+  color: hsl(240, 6%, 50%);
+  font-weight: 600;
 }
-.dark .liststatus{
-  color:hsl(234, 39%, 85%);
+.dark .liststatus {
+  color: hsl(234, 39%, 85%);
 }
-.dragtext{
-   color:hsl(234, 39%, 85%);
+.dragtext {
+  color: hsl(234, 39%, 85%);
 }
-.dark .dragtext{
-  color:hsl(240, 6%, 50%);;
+.dark .dragtext {
+  color: hsl(240, 6%, 50%);
 }
 .header {
   background-image: url("images/bg-mobile-light.jpg");
@@ -90,18 +89,18 @@
   font-size: larger;
 }
 
-.item{
-  background-color:white;
+.item {
+  background-color: white;
   border-radius: 5px;
 }
 
 /*desktop and larger view*/
 
-@media screen and (min-width:821px) {
+@media screen and (min-width: 821px) {
   .header {
     background-image: url("images/bg-desktop-light.jpg");
   }
-  .dark .header{
+  .dark .header {
     background-image: url("images/bg-desktop-dark.jpg");
   }
 }
