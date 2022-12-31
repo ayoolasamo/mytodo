@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">To DO App</h1>
+<h1 align="center">To Do App</h1>
 
 <div align="center">
   <h3>
@@ -23,7 +23,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/ayoolasamo/mytodo/blob/master/capture.PNG)
+![screenshot]https://github.com/ayoolasamo/mytodo/blob/master/Todo.PNG)
 
 This is a simple application that can be used to keep a list of activities to be carried out.
 
