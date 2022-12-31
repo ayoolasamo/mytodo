@@ -23,7 +23,7 @@
 
 ## Overview
 
-![screenshot]https://github.com/ayoolasamo/mytodo/blob/master/Todo.PNG)
+![screenshot](https://github.com/ayoolasamo/mytodo/blob/master/Todo.PNG)
 
 This is a simple application that can be used to keep a list of activities to be carried out.
 
